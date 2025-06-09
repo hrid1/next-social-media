@@ -5,8 +5,8 @@ import React from "react";
 export default function layout({ children }: { children: React.ReactNode }) {
   return (
     <>
-      <main className="flex justify-between max-w-7xl mx-auto ">
-        <div className="hidden sm:inline border-r h-screen sticky top-0 p-3">
+      <main className="flex justify-between container mx-auto ">
+        <div className="hidden sm:inline border-r h-screen sticky top-0 p-3 w-[16rem]">
           <LeftSidebar />
         </div>
 

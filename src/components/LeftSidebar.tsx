@@ -4,13 +4,14 @@ import { FaXTwitter } from "react-icons/fa6";
 import { Button } from "./ui/button";
 import { FaHome } from "react-icons/fa";
 import { IoMdHome } from "react-icons/io";
+import Loader from "./Loader";
 
 export default function LeftSidebar() {
   return (
-    <div className="space-y-8 w-60">
+    <div className="space-y-8 w-full">
       <div className="">
         {/* logo */}
-        <FaXTwitter className="text-4xl text-gray-800" />
+        <FaXTwitter className="text-5xl text-gray-800" />
       </div>
 
       <div className="space-y-6">
@@ -27,6 +28,8 @@ export default function LeftSidebar() {
           </Button>
         </div>
       </div>
+
+      <Loader />
     </div>
   );
 }
