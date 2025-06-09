@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { Input } from "./ui/input";
 import { useRouter } from "next/navigation";
+import News from "./News";
 
 export default function RightSidebar() {
   const [searchValue, setSearchValue] = useState("");
@@ -14,7 +15,7 @@ export default function RightSidebar() {
   };
   return (
     <>
-      <div className="sticy top-0 bg-white py-2">
+      <div className="sticky top-0 bg-white py-2">
         <form onSubmit={handleSubmit}>
           <Input
             value={searchValue}
@@ -25,6 +26,7 @@ export default function RightSidebar() {
           />
         </form>
       </div>
+      <News />
     </>
   );
 }
